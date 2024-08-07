@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+body {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(300deg,#191970,#000000);
+  background-size: 1000% 1000%;
+  animation: gradient-animation 12s ease infinite;
+  color: white;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 12px;
+}
+
+a {
+  color: white;
+}
+
+.container {
+background-color: rgba(255, 255, 255, 0.05);
+border-radius: 8px;
+position: absolute;
+left: 50%;
+top: 50%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+width: 75%;
+height: 75%;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
